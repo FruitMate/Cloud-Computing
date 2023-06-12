@@ -21,7 +21,7 @@ def save_history_to_firestore(uid, image_url, classification_result):
         }
 
         db.collection('classification_results').add(data)
-        response = {'code': 200, 'message': 'Data berhasil disimpan'}
+        response = {'code': 200, 'message': 'Data saved successfully!'}
         response_json = json.dumps(response)
         return response_json, 200
     except Exception as e:
