@@ -3,4 +3,4 @@
 /controllers/fruitmate_model.tflite
 /venv
 /image
-/serviceAccount.json
+serviceAccount.json
