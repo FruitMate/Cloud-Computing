@@ -1,6 +1,7 @@
 import firebase_admin
 from firebase_admin import firestore
 from datetime import datetime
+import pytz
 import json
 
 cred = firebase_admin.credentials.Certificate(
@@ -13,11 +14,15 @@ db = firestore.client()
 # Save data to Firestore
 def save_history_to_firestore(uid, image_url, classification_result):
     try:
+        server_time = datetime.now()
+        user_timezone = pytz.timezone('Asia/Jakarta')
+        user_time = server_time.astimezone(user_timezone)
+
         data = {
             'uid': uid,
             'image_url': image_url,
             'classification_result': classification_result,
-            'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            'timestamp': user_time.strftime('%Y-%m-%d %H:%M:%S')
         }
 
         db.collection('classification_results').add(data)
