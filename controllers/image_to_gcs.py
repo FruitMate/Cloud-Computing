@@ -4,14 +4,14 @@ import json
 # Initialize GCS Client
 storage_client = storage.Client.from_service_account_json('config/google-cloud-storage/serviceAccount.json')
 
+# Save Image to Permanent Directory in Google Cloud Storage
 def save_image_to_gcs(image, filename):
     try:
         bucket_name = 'img-history-storage-bucket'
         bucket = storage_client.bucket(bucket_name)
         image.filename = filename
-        blob = bucket.blob('history/' + image.filename)  # Save to "history" folder
+        blob = bucket.blob('history/' + image.filename)
 
-        # Set stream position to the beginning
         image.seek(0)
 
         blob.upload_from_file(image)
@@ -22,15 +22,15 @@ def save_image_to_gcs(image, filename):
     except:
         error_message = {'message': 'Image not uploaded to GCS!'}
         return json.dumps(error_message), 500
-
+    
+# Save Image to Temporary Directory in Google Cloud Storage
 def save_image_to_tmp_gcs(image, filename):
     try:
         bucket_name = 'img-history-storage-bucket'
         bucket = storage_client.bucket(bucket_name)
         image.filename = filename
-        blob = bucket.blob('tmp/' + image.filename)  # Save to "tmp" folder
+        blob = bucket.blob('tmp/' + image.filename)
 
-        # Set stream position to the beginning
         image.seek(0)
 
         blob.upload_from_file(image)
@@ -42,11 +42,12 @@ def save_image_to_tmp_gcs(image, filename):
         error_message = {'message': 'Image not uploaded to temporary GCS!'}
         return json.dumps(error_message), 500
 
+#Remove The Image From Temporary Storage
 def delete_image_from_tmp_gcs(filename):
     try:
         bucket_name = 'img-history-storage-bucket'
         bucket = storage_client.bucket(bucket_name)
-        blob = bucket.blob('tmp/' + filename)  # Path to the image in "tmp" folder
+        blob = bucket.blob('tmp/' + filename)
         blob.delete()
     except:
         error_message = {'message': 'Failed to delete image from temporary GCS!'}
