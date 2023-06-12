@@ -14,7 +14,7 @@ db = firestore.client()
 # Save data to Firestore
 def save_history_to_firestore(uid, image_url, classification_result):
     try:
-        server_time = datetime.now()
+        server_time = datetime.now()s
         user_timezone = pytz.timezone('Asia/Jakarta')
         user_time = server_time.astimezone(user_timezone)
 
