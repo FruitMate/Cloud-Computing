@@ -35,10 +35,11 @@ The following are the team members involved in the development of this project:
 - *Header*: -
 - *Request Body*: -
 - *Response*:
-  json
+  ```json
   {
     "message": "Application running!"
   }
+  ```
   
 ### 2. Endpoint: `/api/scan-apple`
 #### Endpoint to receive requests and provide responses to fruit classification
@@ -48,12 +49,13 @@ The following are the team members involved in the development of this project:
 - *Request Body*:
   - **`-`**
 - *Response*:
-  json
+  ```json
   {
     "code": 200,
     "message": "Classification Success!",
     "prediction": "overripe"
   }
+  ```
   
 ### 3. Endpoint: `/api/history/[param]`
 #### Endpoint to receive requests and provide responses to fruit classification
@@ -68,7 +70,7 @@ The following are the team members involved in the development of this project:
   | Email     | String  | Authenticated user email  |
 
 - *Response*:
-  json
+  ```json
   {
     "code": 200,
     "data": [
@@ -98,4 +100,4 @@ The following are the team members involved in the development of this project:
         }
     ]
   }
-  
+  ```
