@@ -1,0 +1,6 @@
+/__pycache__
+/controllers/__pycache__
+/controllers/fruitmate_model.tflite
+/venv
+/image
+/serviceAccount.json
