@@ -4,7 +4,6 @@ from firebase_admin import auth
 import json
 import string
 import random
-import os
 
 from controllers.scan_apple import Scanner
 from controllers.image_to_gcs import save_image_to_gcs, save_image_to_tmp_gcs, delete_image_from_tmp_gcs
