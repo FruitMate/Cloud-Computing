@@ -1,0 +1,7 @@
+{
+  "cloudcode.customApplications": [],
+  "cloudcode.autoDependencies": "off",
+  "cloudcode.dependencyPaths": {
+    "gcloud": "C:\\Users\\acern\\AppData\\Local\\Google\\Cloud SDK"
+  }
+}
