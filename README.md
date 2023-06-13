@@ -4,7 +4,7 @@
 1. [FruitMate Team Member](#team-member)
 2. [API Description](#api-description)
 3. [Stacks](#stacks)
-4. [How to Deploy API?](#how-to-deploy?)
+4. [How to Deploy API?](#how-to-deploy)
 5. [API Endpoints](#api-enspoints)
 
 ## Team Member
@@ -31,7 +31,7 @@ RESTful APIs deployed on Google Cloud Platform using the services of App Engine,
 - Firebase Firestore (Google Cloud Platform)
 - Postman
 
-## How to Deploy?
+## How to Deploy
 
 - ### Clone Repository
   You can clone the repository, you can do this by downloading this repo or using the terminal by:
