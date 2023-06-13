@@ -6,5 +6,3 @@
 /.gcloudignore
 /config/firebase/serviceAccount.json
 /config/google-cloud-storage/serviceAccount.json
-!config/firebase/
-!config/google-cloud-storage/
