@@ -2,7 +2,9 @@
 /controllers/__pycache__
 /controllers/fruitmate_model.tflite
 /venv
-/image
-serviceAccount.json
 /.vscode
 /.gcloudignore
+/config/firebase/serviceAccount.json
+/config/google-cloud-storage/serviceAccount.json
+!config/firebase/
+!config/google-cloud-storage/
