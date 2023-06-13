@@ -4,3 +4,4 @@
 /venv
 /image
 serviceAccount.json
+/.vscode
