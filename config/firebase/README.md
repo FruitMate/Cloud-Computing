@@ -1,0 +1,1 @@
+Place serviceAccount.json for Access to Firebase Project at this path!
