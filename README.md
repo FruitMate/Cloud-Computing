@@ -3,6 +3,12 @@
 <h1 align="center">
   <img align="center" src="assets/logo.png"  width="500"></img>
 
+## About This App
+The FruitMate application is an application that can help detect the level of fruit ripeness. It is equipped with additional features such as news, fruit information, fruit storage information, and plant care. This application is expected to assist users, especially farmers, in predicting which fruits are suitable to enter the market.
+
+## Project Plan
+The project plan file can be accessed at the following link: https://drive.google.com/file/d/1iUHJNwcBXzqq-hiii_t34qfCoUvwZK7y/view?usp=sharing
+
 ## List of Contents
 
 1. [FruitMate Team Member](#team-member)
