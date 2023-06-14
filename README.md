@@ -70,7 +70,7 @@ RESTful APIs deployed on Google Cloud Platform using the services of App Engine,
 - ### Deploy API
   Go to Cloud Editor or Cloud Shell, run this command:
   ```shell
-  app deploy
+  gcloud app deploy
   ```
 - ### Testing with Postman
   You can use Postman to test the server according to the endpoints below, here are the steps:
