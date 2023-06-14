@@ -1,5 +1,7 @@
 # Cloud Computing - FruitMate
 
+![FruitMate's Logo](/assets/logo.png)
+
 ## List of Contents
 
 1. [FruitMate Team Member](#team-member)
