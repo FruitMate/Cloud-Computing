@@ -4,5 +4,4 @@
 /venv
 /.vscode
 /.gcloudignore
-/config/firebase/serviceAccount.json
-/config/google-cloud-storage/serviceAccount.json
+serviceAccount.json
