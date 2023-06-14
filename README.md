@@ -72,6 +72,11 @@ RESTful APIs deployed on Google Cloud Platform using the services of App Engine,
   ```shell
   gcloud app deploy
   ```
+- ### Get HTTP URL
+  For testing, we should have http url, run this command:
+  ```shell
+  gcloud app browse
+  ```
 - ### Testing with Postman
   You can use Postman to test the server according to the endpoints below, here are the steps:
   - Install Postman
