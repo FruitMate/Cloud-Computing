@@ -39,7 +39,7 @@ RESTful APIs deployed on Google Cloud Platform using the services of App Engine,
 
 - ### Cloud Architecture
 
-  [/assets/cloud-architecture.png]
+  ![cloud-architecture.png](/assets/cloud-architecture.png)
 
 - ### Clone Repository
   You can clone the repository, you can do this by downloading this repo or using the terminal by:
