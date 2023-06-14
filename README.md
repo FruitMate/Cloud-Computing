@@ -1,6 +1,7 @@
 # Cloud Computing - FruitMate
 
-![FruitMate's Logo](/assets/logo.png)
+<h1 align="center">
+  <img align="center" src="assets/logo.png"  width="500"></img>
 
 ## List of Contents
 
@@ -41,7 +42,8 @@ RESTful APIs deployed on Google Cloud Platform using the services of App Engine,
 
 - ### Cloud Architecture
 
-  ![FruitMate API Architecture](/assets/cloud-architecture.png)
+<h1 align="center">
+  <img align="center" src="assets/cloud-architecture.png"  width="500"></img>
 
 - ### Clone Repository
   You can clone the repository, you can do this by downloading this repo or using the terminal by:
